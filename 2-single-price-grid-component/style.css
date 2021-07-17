@@ -1,0 +1,144 @@
+/* Common STUFF */
+@import url('https://fonts.google.com/specimen/Karla');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px){
+    .container{
+        padding: 15vh 10vw 10vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 12px;
+    }
+}
+:root{
+    font-size: 62.5%;
+}
+p{
+    margin: 0;
+}
+html,body{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    padding: 2rem 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* Main  */
+.main_content{
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 800px;
+}
+.flex-container{
+    display: flex;
+    color: white;
+}
+/* Intro */
+.intro__text{
+    padding: 2rem 3rem;
+    background-color: #ffffff;
+}
+.intro__text h3{
+    padding: 2rem 0;
+    color: hsl(179, 62%, 43%);
+}
+.intro__text p{
+    padding: 1rem 0;
+}
+.intro__text p:nth-of-type(1){
+    color: hsl(71, 73%, 54%);
+}
+.intro__text p:nth-of-type(2){
+    color: hsl(218, 22%, 67%);
+}
+/* Subscription */
+.subscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 3rem;
+    background-color: hsl(179, 62%, 43%) ;
+}
+.price_text{
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    color:  hsl(204, 43%, 93%);
+}
+#price{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+}
+.btn{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+}
+.btn:hover{
+    color: black;
+    box-shadow: none;
+    cursor: pointer;
+}
+/* Why us */
+.why_us{
+    background-color: hsl(179, 62%, 43%) ;
+    opacity: 0.9;
+    padding: 2rem 3rem;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding: 0.2rem 0;
+}
+/* Attribution */
+.attribution{
+    border-radius: 15px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 25;
+    background-color: #2406cf;
+    color: white;
+    padding: 5px 8px;
+    box-shadow: -3px -7px 15px 3px rgba(0,0,0,0.3);
+}
+.attribution p {
+    padding: 10px 5px;
+}
+.attribution a{
+    color: #82F00E;
+    text-decoration: none;
+}
+.attribution a:hover{
+    color: #4da1eb;
+    text-decoration: none;
+}
+.attribution a:active{
+    color: #49b0c9;
+    text-decoration: none;
+}

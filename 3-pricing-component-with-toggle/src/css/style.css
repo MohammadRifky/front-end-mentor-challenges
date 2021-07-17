@@ -1,0 +1,40 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+:root{
+    /* Colors */
+    --primary : hsl(236, 72%, 79%) ;
+    --secondary : hsl(237, 63%, 64%);
+    --lightest-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%) ;
+}
+body{
+    background-color: var(--lightest-grayish-blue);
+    background-image: url('../../images/bg-top.svg'), url('../../images/bg-bottom.svg');
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn{
+        @apply px-5 py-3 rounded-md uppercase font-bold
+    }
+    .gradient-primary{
+        @apply bg-gradient-to-r from-primary to-secondary
+    }
+    .btn-primary{
+        @apply bg-white text-secondary
+    }
+    .btn-secondary{
+        @apply mt-5 bg-gradient-to-r from-primary to-secondary text-white
+    }
+    .price-card{
+        @apply px-10 py-5 text-center rounded-md shadow-md
+    }
+    .price-details{
+        @apply border-t border-lightBlue py-3
+    }
+}

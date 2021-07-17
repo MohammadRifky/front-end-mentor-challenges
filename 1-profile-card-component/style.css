@@ -1,0 +1,121 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+@media (max-width: 375px){
+    .bg_pic_top{
+        top: -60%;
+        left: -60%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 62.5%;
+}
+html,body{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+.bg_pic_top ,
+.bg_pic_bottom {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+}
+.bg_pic_top{
+    top: -20%;
+    left: -20%;
+}
+.bg_pic_bottom{
+    bottom: 10%;
+    right: -5%;
+}
+.profile__card{
+    -webkit-box-shadow: 0px 0px 30px 3px hsl(227deg 10% 46%); 
+    box-shadow: 0px 0px 30px 3px hsl(227deg 10% 46%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.profile__top p {
+    display: flex;
+    justify-content: center;
+}
+.profile__image{
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+}
+.profile__bottom{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+.bottom__info{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center !important;
+}
+.align-center{
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.bold__text{
+    font-weight: 700;
+}
+.light-text{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.margin-left{
+    margin-left: 12px;
+}
+.padding-lg{
+    padding-top: 15px;
+}
+.padding-sm{
+    padding: 10px;
+}
+.attribution{
+    border-radius: 15px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 25;
+    background-color: #2406cf;
+    color: white;
+    padding: 5px 8px;
+    box-shadow: -3px -7px 15px 3px rgba(0,0,0,0.3);
+}
+.attribution p {
+    padding: 10px 5px;
+}
+.attribution a{
+    color: #82F00E;
+    text-decoration: none;
+}
+.attribution a:hover{
+    color: #4da1eb;
+    text-decoration: none;
+}
+.attribution a:active{
+    color: #49b0c9;
+    text-decoration: none;
+}
