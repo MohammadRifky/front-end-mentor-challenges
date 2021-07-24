@@ -1,0 +1,10 @@
+# Ignore any design files if present
+# Since I am using free version, that's far from reality
+# But I do this only for you #FRONTENDMENTOR
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
+#ignore node modules
+node_modules
