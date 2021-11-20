@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fylo data storage component | Frontend Mentor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="min-h-screen text-white bg-mobile bg-cover bg-no-repeat 
+md:bg-desktop md:bg-auto md:bg-bottom bg-blue-darkest 
+relative flex justify-center font-main text-sm">
+  <main class="grid grid-cols-12 my-auto container px-8">
+    <section class="col-span-12 col-start-1 md:col-span-4 md:col-start-2 md:mr-8 md:my-0
+    bg-blue-dark px-8 py-8 my-8 br-tr-100 rounded-md">
+      <img src="./images/logo.svg" alt="logo" class="py-4">
+      <div class="flex flex-start mt-8 mb-4">
+        <span class="bg-blue-darkest mr-4">
+          <img src="./images/icon-document.svg" alt="document-icon" class="p-2">
+        </span>
+        <span class="bg-blue-darkest mr-4">
+          <img src="./images/icon-folder.svg" alt="folder-icon" class="p-2">
+        </span>
+        <span class="bg-blue-darkest mr-4">
+          <img src="./images/icon-upload.svg" alt="folder-icon" class="p-2">
+        </span>
+      </div>
+    </section>
+    <section class="col-span-12 md:col-span-6 my-auto bg-blue-dark rounded-md px-8 py-4 relative">
+      <article class="py-4">
+        <p class="text-center py-3 md:text-left">
+          You’ve used <span class="font-bold">815 GB</span> of your storage
+        </p> 
+        <div class="flex h-4 rounded-full my-2 bg-blue-darkest overflow-hidden">
+          <span class="block w-3/4 rounded-full primary-gradient h-full"></span>
+          <span class="block h-4 w-4 bg-blue-pale rounded-full -ml-4"></span>
+        </div>
+        <div class="flex justify-between">
+          <span class="font-bold">0 GB</span>
+          <span class="font-bold">1000 GB</span>
+        </div>
+      </article>
+      <!-- Data indicator  -->
+      <aside class="absolute top-full -my-4 ml-4 bg-white py-4 rounded-md px-10 font-bold
+            md:top-0 md:-my-12 md:right-0">
+        <div style="
+                  border-right: 20px solid white;
+                  border-top: 20px solid white;
+                  border-left: 20px solid transparent;
+                  border-bottom: 20px solid transparent;" class="absolute right-0 -bottom-3 hidden md:block"></div>
+        <span class="text-blue-darkest text-2xl px-2">185</span>
+        <span class="text-blue-grayish">GB Left</span>
+      </aside>
+    </section>
+  </main>
+  <div class="absolute bottom-0 right-0 px-4 py-2 bg-blue-darkest rounded-tl-3xl">
+    <p class="py-2">
+      Challenge by 
+      <a class="font-bold pl-1 text-primary-from hover:text-primary-to" href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+    </p>
+    <p class="py-2">
+      Coded by 
+      <a class="font-bold pl-1 text-primary-from hover:text-primary-to" href="https://mohammadrifky.github.io/rifkyniyas/">
+        Rifky Niyas
+      </a>
+    </p>
+  </div>
+</body>
+</html>

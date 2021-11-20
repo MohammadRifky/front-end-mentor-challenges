@@ -1,0 +1,19 @@
+{
+  "name": "4-fylo-data-storage-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./css/tailwind.css -o ./css/style.css",
+    "watch-css" : "npx tailwindcss -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
