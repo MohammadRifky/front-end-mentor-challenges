@@ -12,7 +12,7 @@
 </head>
 <body class="min-h-screen text-white bg-mobile bg-cover bg-no-repeat 
 md:bg-desktop md:bg-auto md:bg-bottom bg-blue-darkest 
-relative flex justify-center font-main text-sm">
+relative flex justify-center font-main text-sm pb-32 md:pb-0">
   <main class="grid grid-cols-12 my-auto container px-8">
     <section class="col-span-12 col-start-1 md:col-span-4 md:col-start-2 md:mr-8 md:my-0
     bg-blue-dark px-8 py-8 my-8 br-tr-100 rounded-md">
@@ -44,8 +44,10 @@ relative flex justify-center font-main text-sm">
         </div>
       </article>
       <!-- Data indicator  -->
-      <aside class="absolute top-full -my-4 ml-4 bg-white py-4 rounded-md px-10 font-bold
-            md:top-0 md:-my-12 md:right-0">
+      <!-- transform -translate-y-2/4 translate-x-0 -->
+      <aside class="w-max absolute left-2/4 right-2/4 transform -translate-x-2/4 -my-4
+      md:transform-none md:top-0 md:-my-12 md:right-0 md:left-auto
+      bg-white py-4 rounded-md px-10 font-bold ">
         <div style="
                   border-right: 20px solid white;
                   border-top: 20px solid white;
