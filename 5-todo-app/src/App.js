@@ -1,6 +1,8 @@
+import ToggleThemeButton from "./components/ToggleThemeButton";
+import ToggleCompleteButton from "./components/ToggleCompleteButton";
 const App = () => {
   return (
-    <h1 className="text-xl text-red-300">Start LOL!</h1>
+    <h1 className="text-xl text-red-300">Todo</h1>
   );
 }
 
