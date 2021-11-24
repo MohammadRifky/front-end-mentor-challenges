@@ -4,7 +4,10 @@
 
 @layer base {
   body {
-    @apply text-lg font-bold font-main;
+    @apply text-lg font-normal font-main min-h-screen;
+  }
+  #root {
+    @apply min-h-full;
   }
 }
 
