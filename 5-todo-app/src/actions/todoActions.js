@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {
     GET_TODOS,
     ADD_TODO,
@@ -9,74 +8,60 @@ import {
 } from '../actions/actionTypes';
 
 export const getTodos = () => dispatch => {
-  dispatch(setTodosLoading());
-  axios
-    .get('/api/items')
-    .then(res =>
-      dispatch({
-        type: GET_TODOS,
-        payload: res.data
-      })
-    )
-    .catch(err =>
-        console.log(err)
-    );
+  try{
+    dispatch(setTodosLoading());
+    dispatch({
+      type: GET_TODOS,
+      payload: JSON.parse(localStorage.getItem('todo-state')).todos
+    })
+  }catch(e){
+    console.log(e)
+  }
 };
 
 export const addTodo = item => (dispatch, getState) => {
-  axios
-    .post('/api/items', item, tokenConfig(getState))
-    .then(res =>
-      dispatch({
-        type: ADD_TODO,
-        payload: res.data
-      })
-    )
-    .catch(err =>
-        console.log(err)
-    );
+  try {
+    dispatch({
+      type: ADD_TODO,
+      payload: item
+    })
+  } catch (error) {
+    console.log(error)
+  }
 };
 
 export const deleteTodo = id => (dispatch, getState) => {
-  axios
-    .delete(`/api/items/${id}`, tokenConfig(getState))
-    .then(res =>
-      dispatch({
-        type: REMOVE_TODO,
-        payload: id
-      })
-    )
-    .catch(err =>
-        console.log(err)
-    );
+  try {
+    dispatch({
+      type: REMOVE_TODO,
+      payload: id
+    })
+  } catch (error) {
+    console.log(error)
+  }
 };
 
 export const updateTodo = id => (dispatch, getState) => {
-  axios
-    .delete(`/api/items/${id}`, tokenConfig(getState))
-    .then(res =>
-      dispatch({
-        type: UPDATE_TODO,
-        payload: id
-      })
-    )
-    .catch(err =>
-        console.log(err)
-    );
+
+  try {
+    dispatch({
+      type: UPDATE_TODO,
+      payload: id
+    })
+  } catch (error) {
+    console.log(error)
+  }
 };
 
 export const toggleCompleted = id => (dispatch, getState) => {
-  axios
-    .delete(`/api/items/${id}`, tokenConfig(getState))
-    .then(res =>
-      dispatch({
-        type: TOGGLE_COMPLETED,
-        payload: id
-      })
-    )
-    .catch(err =>
-        console.log(err)
-    );
+  try {
+    dispatch({
+      type: TOGGLE_COMPLETED,
+      payload: id
+    })
+  } catch (error) {
+    console.log(error)
+  }
 };
 
 export const setTodosLoading = () => {
