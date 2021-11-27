@@ -1,25 +1,39 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const todoSlice = createSlice({
-  name: 'counter',
+  name: 'todos',
   initialState : {
     todos: [],
   },
   reducers: {
     addTodo: ( state , action ) => {
+      console.log(state)
         state.todos.push(action.payload)
     },
-    getTodos: (state) => {
-        state.value -= 1
-    },
+    // getTodos: (state) => {
+    //     state.value -= 1
+    // },
     removeTodo: (state, action) => {
-        state.value += action.payload
+      state =  {
+        ...state,
+        items: state.todos.filter(todo => todo.id !== action.payload)
+      }
     },
-    updateTodo: (state) => {
-        state.value += 1
+    updateTodo: (state, action) => {
+      state ={
+        ...state,
+        todos: state.todos.map(todo => ( todo.id === action.payload 
+            ? {...todo, ...action.payload} 
+            : todo))
+      }
     },
-    toggleCompleted: (state) => {
-        state.value -= 1
+    toggleCompleted: (state, action) => {
+      state ={
+        ...state,
+        todos: state.todos.map(todo => (todo.id === action.payload 
+            ? {...todo, isCompleted : !todo.isCompleted} 
+            : todo))
+      }
     }
   },
 })
@@ -28,39 +42,3 @@ export const todoSlice = createSlice({
 export const { addTodo, getTodos, removeTodo, updateTodo, toggleCompleted } = todoSlice.actions
 
 export default todoSlice.reducer
-
-//  case ADD_TODO:
-//         return {
-//             ...state,
-//             items: [action.payload, ...state.todos]
-//         };
-//     case GET_TODOS:
-//         return {
-//             ...state,
-//             items: action.payload,
-//             loading: false
-//         }
-//     case REMOVE_TODO:
-//         return {
-//             ...state,
-//             items: state.todos.filter(todo => todo.id !== action.payload)
-//         }
-//     case UPDATE_TODO:
-//         return {
-//             ...state,
-//             items: state.todos.map(todo => ( todo.id === action.payload 
-//                 ? {...todo, ...action.payload} 
-//                 : todo))
-//         }
-//     case TOGGLE_COMPLETED:
-//         return {
-//             ...state,
-//             items: state.todos.map(todo => (todo.id === action.payload 
-//                 ? {...todo, isCompleted : !todo.isCompleted} 
-//                 : todo))
-//         }
-//     case TODOS_LOADING:
-//         return {
-//             ...state,
-//             loading: true
-//         }

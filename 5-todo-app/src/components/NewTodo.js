@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import { addTodo } from '../redux/slices/todoSlice'
 const NewTodo = () => {
     const [newTodo, setNewTodo] = useState("")
+    const dispatch = useDispatch()
 
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(newTodo)
+        dispatch(addTodo(newTodo))
     }
     return (
         <form onSubmit={handleSubmit}>
