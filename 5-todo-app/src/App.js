@@ -1,6 +1,6 @@
 import NewTodo from "./components/NewTodo";
-import ToggleThemeButton from "./components/ToggleThemeButton";
-import ToggleCompleteButton from "./components/ToggleCompleteButton";
+import TodoList from "./components/TodoList";
+
 const App = () => {
   return (
     <>
@@ -8,6 +8,7 @@ const App = () => {
       {/* <ToggleThemeButton /> */}
       <NewTodo />
       {/* <ToggleCompleteButton /> */}
+      <TodoList />
     </>
   );
 }
