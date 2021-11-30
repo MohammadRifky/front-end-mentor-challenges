@@ -1,9 +1,16 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { toggleCompleted } from '../redux/slices/todoSlice'
 
-const ToggleCompleteButton = () => {
+const ToggleCompleteButton = ({toggleIndex}) => {
+    const dispatch = useDispatch()
     return (
         <>
-            <button>Complete</button>
+            <button onClick={() => {
+                console.log("clicked")
+                dispatch(toggleCompleted(toggleIndex))
+            }   
+            }>Complete</button>
         </>
     )
 }

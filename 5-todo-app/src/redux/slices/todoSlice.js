@@ -10,10 +10,7 @@ export const todoSlice = createSlice({
         state.todos.push(action.payload)
     },
     removeTodo: (state, action) => {
-      state =  {
-        ...state,
-        items: state.todos.filter(todo => todo.id !== action.payload)
-      }
+      state.todos =  state.todos.filter(todo => todo.id !== action.payload)
     },
     updateTodo: (state, action) => {
       state ={
@@ -24,12 +21,7 @@ export const todoSlice = createSlice({
       }
     },
     toggleCompleted: (state, action) => {
-      state ={
-        ...state,
-        todos: state.todos.map(todo => (todo.id === action.payload 
-            ? {...todo, isCompleted : !todo.isCompleted} 
-            : todo))
-      }
+      state.todos[action.payload].isCompleted = !state.todos[action.payload].isCompleted
     }
   },
 })
