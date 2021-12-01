@@ -7,7 +7,6 @@ const ToggleCompleteButton = ({toggleIndex}) => {
     return (
         <>
             <button onClick={() => {
-                console.log("clicked")
                 dispatch(toggleCompleted(toggleIndex))
             }   
             }>Complete</button>
