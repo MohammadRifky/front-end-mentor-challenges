@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Todo from './Todo'
 import { useSelector } from 'react-redux'
 const TodoList = () => {
-    const [filter, setFilter] = useState("")
     const todos = useSelector((state) => state.todos.todos)
     const [todosToDisplay, setTodosToDisplay] = useState(todos)
     const getActiveTodos = () => todos.filter(todo => 
