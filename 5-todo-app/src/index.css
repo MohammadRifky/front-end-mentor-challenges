@@ -7,7 +7,7 @@
     @apply text-lg font-normal font-main min-h-screen;
   }
   #root {
-    @apply min-h-full;
+    @apply min-h-screen px-8 py-12;
   }
 }
 

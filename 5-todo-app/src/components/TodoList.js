@@ -8,13 +8,14 @@ const TodoList = () => {
         todo.isCompleted !== true)
     const getCompletedTodos = () => todos.filter(todo => 
         todo.isCompleted !== false)
+    // const uncompletedTodos = getActiveTodos().length
     return (
         <div>
             { todosToDisplay.map((todo, index) => (
                 <Todo key={todo.id} todoIndex={index}  />
             ))}
             <div>
-                <span>{todosToDisplay.length} items left</span>
+                <span>{getActiveTodos().length} items left</span>
                 <button onClick={()=> setTodosToDisplay(todos) }>
                     All
                 </button>

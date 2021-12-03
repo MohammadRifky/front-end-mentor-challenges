@@ -6,8 +6,10 @@ const App = () => {
   
   return (
     <>
-      <h1 className="text-xl text-red-700 text-center">Todo</h1>
-      <ToggleThemeButton />
+      <header>
+        <h1 className="text-xl">Todo</h1>
+        <ToggleThemeButton />
+      </header>
       <NewTodo />
       <TodoList />
     </>
