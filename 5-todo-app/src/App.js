@@ -6,7 +6,7 @@ const App = () => {
   
   return (
     <>
-      <header>
+      <header className="flex justify-around">
         <h1 className="text-xl">Todo</h1>
         <ToggleThemeButton />
       </header>
