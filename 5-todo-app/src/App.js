@@ -11,7 +11,9 @@ const App = () => {
         <ToggleThemeButton />
       </header>
       <NewTodo />
-      <TodoList />
+      <main>
+        <TodoList />
+      </main>
     </>
   );
 }
