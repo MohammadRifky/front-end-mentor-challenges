@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 const TodoList = () => {
     const todos = useSelector((state) => state.todos.todos)
+    console.log(todos)
     const [todosToDisplay, setTodosToDisplay] = useState(todos)
     const getActiveTodos = () => todos.filter(todo =>
         todo.isCompleted !== true)
@@ -23,7 +24,7 @@ const TodoList = () => {
     }
     return (
         <div>
-            <DragDropContext onDragEnd={handleOnDragEnd}>
+            {/* <DragDropContext onDragEnd={handleOnDragEnd}>
                 <Droppable droppableId="todos">
                     {(provided) => (
                         <ul className="todos" {...provided.droppableProps} ref={provided.innerRef}>
@@ -42,11 +43,11 @@ const TodoList = () => {
                         </ul>
                     )}
                 </Droppable>
-            </DragDropContext>
-            {/* {todosToDisplay.map((todo, index) => (
+            </DragDropContext> */}
+            {todos.map((todo, index) => (
                 <Todo key={todo.id} todoIndex={index} />
-            ))} */}
-            <div>
+            ))}
+            {/* <div>
                 <span>{getActiveTodos().length} items left</span>
                 <button onClick={() => setTodosToDisplay(todos)}>
                     All
@@ -57,7 +58,7 @@ const TodoList = () => {
                 <button onClick={() => setTodosToDisplay(getCompletedTodos)}>
                     Completed
                 </button>
-            </div>
+            </div> */}
         </div>
     )
 }
