@@ -8,8 +8,7 @@ const ToggleCompleteButton = ({toggleIndex}) => {
         <>
             <button onClick={() => {
                 dispatch(toggleCompleted(toggleIndex))
-            }   
-            }>Complete</button>
+            }}>Complete</button>
         </>
     )
 }
