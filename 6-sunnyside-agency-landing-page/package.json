@@ -1,0 +1,15 @@
+{
+  "name": "6-sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./css/input.css -o ./css/dist.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
+  }
+}

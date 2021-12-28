@@ -6,9 +6,11 @@ import TodoFilters, { getTodosToDisplay } from './TodoFilter';
 const TodoList = () => {
     const todos = useSelector((state) => state.todos.todos)
     const filterValue = useSelector((state) => state.todoFilter.value)
+    console.log(getTodosToDisplay)
     const [todosToDisplay, setTodosToDisplay] = useState(
         getTodosToDisplay(todos, filterValue)
     )
+    console.log(todosToDisplay)
     const getActiveTodos = () => todos.filter(todo =>
         todo.isCompleted !== true)
     const handleOnDragEnd = (result) => {
