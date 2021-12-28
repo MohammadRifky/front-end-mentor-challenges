@@ -4,6 +4,12 @@
 
 @layer base {
   body {
-    @apply font-xl;
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .bg-image-cover {
+    @apply bg-cover bg-no-repeat bg-center bg-scroll;
   }
 }

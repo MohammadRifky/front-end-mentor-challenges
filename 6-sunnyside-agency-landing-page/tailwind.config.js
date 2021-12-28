@@ -22,7 +22,12 @@ module.exports = {
       },
       'white': 'hsl(0, 0%, 100%)'
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-image': "url('../images/desktop/image-header.jpg')",
+        'hero-image-mobile': "url('../images/mobile/image-header.jpg')",
+      }
+    }
   },
   plugins: [],
 }
