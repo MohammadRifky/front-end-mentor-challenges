@@ -1,6 +1,10 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
+    fontFamily: {
+      'sans': 'Barlow, sans-serif',
+      'serif': 'Fraunces, serif'
+    },
     colors: {
       transparent: 'transparent',
       primary : {
@@ -10,14 +14,13 @@ module.exports = {
         'blue' : 'hsl(198, 62%, 26%)',
         'moderate-cyan' : 'hsl(168, 34%, 41%)'
       },
-      'white': '#ffffff',
-      'purple': '#3f3cbb',
-      'midnight': '#121063',
-      'metal': '#565584',
-      'tahiti': '#3ab7bf',
-      'silver': '#evebff',
-      'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
+      blue: {
+        'desaturated' : 'hsl(212, 27%, 19%)',
+        'vd-grayish': 'hsl(213, 9%, 39%)',
+        'd-grayish' : 'hsl(232, 10%, 55%)',
+        'grayish' : 'hsl(210, 4%, 67%)'
+      },
+      'white': 'hsl(0, 0%, 100%)'
     },
     extend: {},
   },
