@@ -16,6 +16,9 @@
   .grid-center {
     @apply grid justify-items-center;
   }
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center;
+  }
   .col-md-2 {
     @apply grid-cols-1 md:grid-cols-2;
   }
