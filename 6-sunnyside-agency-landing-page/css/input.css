@@ -3,13 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply h-full;
+  }
   body {
     @apply text-xl;
   }
 }
 
 @layer components {
+  /* Grid Layout */
+  .grid-center {
+    @apply grid justify-items-center;
+  }
+  .col-md-2 {
+    @apply grid-cols-1 md:grid-cols-2;
+  }
+  .col-md-3 {
+    @apply grid-cols-1 md:grid-cols-3;
+  }
   .bg-image-cover {
     @apply bg-cover bg-no-repeat bg-center bg-scroll;
+  }
+  .hide-mobile {
+    @apply hidden md:block;
+  }
+  .hide-desktop {
+    @apply block md:hidden;
   }
 }
