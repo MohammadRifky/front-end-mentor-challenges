@@ -29,9 +29,22 @@
     @apply bg-cover bg-no-repeat bg-center bg-scroll;
   }
   .hide-mobile {
-    @apply hidden md:block;
+    @apply hidden md:block !important;
   }
   .hide-desktop {
-    @apply block md:hidden;
+    @apply block md:hidden !important;
+  }
+  .button {
+    @apply inline-block py-2 px-8 text-lg font-medium rounded-full bg-white text-blue-desaturated;
+  }
+  .section-heading {
+    @apply font-serif text-2xl;
+  }
+  .navbar {
+    width: calc(100% - 2rem);
+    @apply absolute top-full left-0 mx-8
+    flex flex-col bg-white text-blue-desaturated rounded-xl
+    md:flex-row md:static md:bg-transparent
+    md:text-white md:ml-auto;
   }
 }

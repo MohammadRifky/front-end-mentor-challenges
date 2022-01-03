@@ -14,50 +14,53 @@
 <body>
   <div class="min-h-screen bg-hero-image-mobile md:bg-hero-image bg-image-cover 
   flex flex-col text-white">
-    <header class="flex justify-between px-4 py-8">
+    <header class="flex items-center justify-between px-4 py-8">
       <a href="">
         <img src="./images/logo.svg" alt="sunnyside-logo">
       </a>
-      <nav class="flex gap-x-4">
+      <nav class="navbar">
         <a href="">About</a>
         <a href="">Services</a>
         <a href="">Projects</a>
-        <a href="">Contact</a>
+        <a href="" class="button">Contact</a>
       </nav>
+      <button class="hide-desktop">
+        <img src="./images/icon-hamburger.svg" alt="hamburger icon">
+      </button>
     </header>
     <section class="flex flex-col justify-center items-center my-auto gap-y-8">
-      <h1 class="text-5xl">We are creatives</h1>
+      <h1 class="text-5xl font-serif">We are creatives</h1>
       <img src="./images/icon-arrow-down.svg" alt="down-arrow-icon">
     </section>
   </div>
   <main>
     <div class="grid-center col-md-2">
-      <section class="flex flex-col items-center justify-center">
-        <h2>Transform your brand</h2>
-        <p>We are a full-service creative agency specializing in helping brands grow fast.
+      <section class="my-auto px-16">
+        <h2 class="section-heading">Transform your brand</h2>
+        <p class="py-8">We are a full-service creative agency specializing in helping brands grow fast.
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <a href="">Learn more</a>
+        <a href="#" class="border-b border-primary-red" >Learn more</a>
       </section>
       <!-- Desktop Image -->
-      <figure class="hidden md:block">
+      <figure class="hide-mobile">
         <img src="./images/desktop/image-transform.jpg" alt="transform-image">
       </figure>
       <!-- Mobile Image -->
-      <figure class="block md:hidden">
+      <figure class="hide-desktop">
         <img src="./images/mobile/image-transform.jpg" alt="transform-image-mobile-version">
       </figure>
     </div>
     <div class="grid-center col-md-2">
       <!-- Desktop Image -->
-      <figure class="hidden md:block">
+      <figure class="hide-mobile">
         <img src="./images/desktop/image-stand-out.jpg" alt="stand out image">
       </figure>
       <!-- Mobile Image -->
-      <figure class="block md:hidden">
+      <figure class="hide-desktop">
         <img src="./images/mobile/image-stand-out.jpg" alt="stand out image - mobile version">
       </figure>
       <section>
-        <h2>Stand out to the right audience</h2>
+        <h2 class="section-heading">Stand out to the right audience</h2>
         <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build
           and
           extend your brand in digital places.</p>
@@ -65,14 +68,17 @@
       </section>
     </div>
     <div class="grid-center col-md-2">
-      <section class="bg-graphic-design-image-mobile md:bg-graphic-design-image bg-image-cover">
-        <h2>Graphic design</h2>
-        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
-          clients’
-          attention.</p>
+      <section class="relative">
+        <img src="./images/desktop/image-graphic-design.jpg" alt="">
+        <div class="absolute bottom-0 left-2/4">
+          <h2 class="section-heading">Graphic design</h2>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+            clients’ attention.</p>
+        </div>
       </section>
-      <section class="bg-photography-image-mobile md:bg-photography-image bg-image-cover">
-        <h2>Photography</h2>
+      <section class="relative">
+        <img src="./images/desktop/image-photography.jpg" alt="">
+        <h2 class="section-heading">Photography</h2>
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </section>
     </div>
@@ -126,7 +132,7 @@
       <a href="">Services</a>
       <a href="">Projects</a>
 
-      <aside>
+      <aside class="flex ">
         <img src="./images/icon-facebook.svg" alt="">
         <img src="./images/icon-instagram.svg" alt="">
         <img src="./images/icon-twitter.svg" alt="">
