@@ -432,6 +432,22 @@ body {
   line-height: 1.75rem;
 }
 
+p {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(168 34% 41% / var(--tw-bg-opacity));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 *, ::before, ::after {
   border-color: currentColor;
 }
@@ -597,14 +613,34 @@ body {
   line-height: 2rem;
 }
 
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 9999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonial p {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Utilites */
+
 .bg-image-cover {
   background-size: cover;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* Utilites */
 
 .marker {
   position: relative !important;
@@ -668,17 +704,47 @@ body {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.top-2\/3 {
+  top: 66.666667%;
 }
 
-.left-2\/4 {
-  left: 50%;
+.left-auto {
+  left: auto;
+}
+
+.right-auto {
+  right: auto;
+}
+
+.top-2\/4 {
+  top: 50%;
 }
 
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .flex {
@@ -687,6 +753,10 @@ body {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[50vh\] {
+  min-height: 50vh;
 }
 
 .grow {
@@ -717,9 +787,9 @@ body {
   row-gap: 2rem;
 }
 
-.bg-primary-moderate-cyan {
-  --tw-bg-opacity: 1;
-  background-color: hsl(168 34% 41% / var(--tw-bg-opacity));
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .bg-hero-image-mobile {
@@ -734,6 +804,15 @@ body {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -757,6 +836,10 @@ body {
 @media (min-width: 768px) {
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:bg-hero-image {

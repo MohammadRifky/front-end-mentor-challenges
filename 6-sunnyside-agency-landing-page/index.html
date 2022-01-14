@@ -37,7 +37,7 @@
     <div class="grid-center col-md-2">
       <section class="benefits-section">
         <h2 class="section-heading">Transform your brand</h2>
-        <p class="py-8">We are a full-service creative agency specializing in helping brands grow fast.
+        <p class="py-8 text-left">We are a full-service creative agency specializing in helping brands grow fast.
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
         <a href="#" class="marker marker-yellow" >Learn more</a>
       </section>
@@ -61,43 +61,69 @@
       </figure>
       <section class="benefits-section">
         <h2 class="section-heading">Stand out to the right audience</h2>
-        <p class="py-8">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build
+        <p class="py-8 text-left">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build
           and
           extend your brand in digital places.</p>
         <a href="#" class="marker marker-red">Learn more</a>
       </section>
     </div>
     <div class="grid-center col-md-2">
-      <section class="relative">
-        <img src="./images/desktop/image-graphic-design.jpg" alt="">
-        <div class="absolute bottom-0 left-2/4">
+      <div class="relative">
+        <!-- Desktop Image -->
+        <figure class="hide-mobile">
+          <img src="./images/desktop/image-graphic-design.jpg" alt="">
+        </figure>
+        <!-- Mobile Image -->
+        <figure class="hide-desktop">
+          <img src="./images/mobile/image-graphic-design.jpg" alt="">
+        </figure>
+        <section class="benefits-section text-center absolute top-2/3 left-auto right-auto">
           <h2 class="section-heading">Graphic design</h2>
           <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
             clients’ attention.</p>
-        </div>
-      </section>
-      <section class="relative">
-        <img src="./images/desktop/image-photography.jpg" alt="">
-        <h2 class="section-heading">Photography</h2>
-        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-      </section>
+        </section>
+      </div>
+      <div class="relative">
+        <!-- Desktop Image -->
+        <figure class="hide-mobile">
+          <img src="./images/desktop/image-photography.jpg" alt="">
+        </figure>
+        <!-- Mobile Image -->
+        <figure class="hide-desktop">
+          <img src="./images/mobile/image-photography.jpg" alt="">
+        </figure>
+        
+        <section class="benefits-section absolute top-2/4 left-auto right-auto">
+          <h2 class="section-heading">Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </section>
+      </div>
     </div>
-    <section>
-      <h2 class="text-center">Client testimonials</h2>
-      <div class="grid-center col-md-3">
-        <article>
+    <section class="min-h-[50vh] my-16">
+      <h2 class="text-center my-8">Client testimonials</h2>
+      <div class="grid-center col-md-3 px-16 gap-x-8">
+        <article class="testimonial">
+          <figure>
+            <img src="./images/image-thomas.jpg" alt="Testimonial by Emily">
+          </figure>
           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
           </p>
           <h5>Emily R.</h5>
           <h6>Marketing Director</h6>
         </article>
-        <article>
+        <article class="testimonial">
+          <figure>
+            <img src="./images/image-thomas.jpg" alt="Testimonial by Thomas">
+          </figure>
           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
             experience.</p>
           <h5>Thomas S.</h5>
           <h6>Chief Operating Officer</h6>
         </article>
-        <article>
+        <article class="testimonial">
+          <figure>
+            <img src="./images/image-thomas.jpg" alt="Testimonial by Jennie">
+          </figure>
           <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
           <h5>Jennie F.</h5>
           <h6>Business Owner</h6>
@@ -125,21 +151,28 @@
     <img src="./images/mobile/image-gallery-sugar-cubes.jpg" 
       alt="" class="hide-desktop">
   </figure>
-  <footer class="bg-primary-moderate-cyan flex-col-center">
+  <footer>
     <img src="./images/logo.svg" alt="">
-    <nav>
-      <a href="">About</a>
-      <a href="">Services</a>
-      <a href="">Projects</a>
-
-      <aside class="flex ">
-        <img src="./images/icon-facebook.svg" alt="">
-        <img src="./images/icon-instagram.svg" alt="">
-        <img src="./images/icon-twitter.svg" alt="">
-        <img src="./images/icon-pinterest.svg" alt="">
-      </aside>
+    <nav class="flex gap-x-8">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
     </nav>
-    <p class="flex flex-col">
+    <aside class="flex mt-12 gap-x-8">
+      <a href="#">
+        <img src="./images/icon-facebook.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="./images/icon-instagram.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="./images/icon-twitter.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="./images/icon-pinterest.svg" alt="">
+      </a>
+    </aside>
+    <p class="flex-col-center">
       <span>Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
