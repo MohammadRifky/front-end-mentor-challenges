@@ -25,26 +25,52 @@
   .col-md-3 {
     @apply grid-cols-1 md:grid-cols-3;
   }
-  .bg-image-cover {
-    @apply bg-cover bg-no-repeat bg-center bg-scroll;
-  }
   .hide-mobile {
     @apply hidden md:block !important;
   }
   .hide-desktop {
     @apply block md:hidden !important;
   }
-  .button {
-    @apply inline-block py-2 px-8 text-lg font-medium rounded-full bg-white text-blue-desaturated;
+  /* Navbar */
+  .navbar {
+    @apply navbar-mobile md:navbar-desktop;
+  }
+  .navbar-mobile {
+    @apply absolute top-full left-0 w-full flex flex-col items-center py-8;
+  }
+  .navbar-desktop {
+    @apply md:static md:flex-row md:items-center md:ml-auto md:mr-0 md:w-fit md:border-t-0
+     md:text-white md:px-5 md:rounded-bl-xl md:py-0;
+  }
+  .navbar a {
+    @apply mx-3;
+  }
+  .nav-active {
+    @apply border-b-4 border-black;
+  }
+  /* Sections */
+  .benefits-section {
+    @apply my-auto px-16;
   }
   .section-heading {
     @apply font-serif text-2xl;
   }
-  .navbar {
-    width: calc(100% - 2rem);
-    @apply absolute top-full left-0 mx-8
-    flex flex-col bg-white text-blue-desaturated rounded-xl
-    md:flex-row md:static md:bg-transparent
-    md:text-white md:ml-auto;
+  .bg-image-cover {
+    @apply bg-cover bg-no-repeat bg-center bg-scroll;
+  }
+  /* Utilites */
+  .marker {
+    @apply relative px-2 after:content-[""] after:absolute after:left-0 after:bottom-0 
+    after:bg-opacity-50 hover:after:bg-opacity-100 after:rounded-full after:w-full after:h-2 after:-z-10 !important;
+  }
+  .marker-yellow {
+    @apply after:bg-primary-yellow;
+  }
+  .marker-red {
+    @apply after:bg-primary-red;
+  }
+  /* Button Style */
+  .button {
+    @apply inline-block py-3 px-8 text-lg font-medium rounded-full bg-white text-blue-desaturated;
   }
 }
