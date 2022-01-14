@@ -62,6 +62,9 @@
   .section-heading {
     @apply font-serif text-2xl;
   }
+  .services-section {
+    @apply benefits-section absolute top-2/3 left-auto right-auto text-center;
+  }
   .testimonial {
     @apply flex-col-center;
   }

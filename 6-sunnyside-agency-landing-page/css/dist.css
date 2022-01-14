@@ -613,6 +613,18 @@ footer {
   line-height: 2rem;
 }
 
+.services-section {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: absolute;
+  top: 66.666667%;
+  left: auto;
+  right: auto;
+  text-align: center;
+}
+
 .testimonial {
   display: flex;
   flex-direction: column;
@@ -716,8 +728,16 @@ footer {
   right: auto;
 }
 
-.top-2\/4 {
-  top: 50%;
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-1 {
+  order: 1;
 }
 
 .my-auto {
@@ -737,14 +757,6 @@ footer {
 
 .mt-12 {
   margin-top: 3rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .flex {
@@ -833,13 +845,19 @@ footer {
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
+.text-primary-desaturated-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(167 40% 24% / var(--tw-text-opacity));
+}
+
+.text-primary-blue {
+  --tw-text-opacity: 1;
+  color: hsl(198 62% 26% / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:bg-hero-image {
