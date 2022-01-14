@@ -446,6 +446,13 @@ footer {
   background-color: hsl(168 34% 41% / var(--tw-bg-opacity));
   padding-top: 2rem;
   padding-bottom: 2rem;
+  --tw-text-opacity: 1;
+  color: hsl(212 27% 19% / var(--tw-text-opacity));
+}
+
+footer a:hover {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -633,16 +640,13 @@ footer {
 }
 
 .testimonial img {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   height: 4rem;
   width: 4rem;
   border-radius: 9999px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.testimonial p {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
 }
 
 /* Utilites */
@@ -708,24 +712,8 @@ footer {
   color: hsl(212 27% 19% / var(--tw-text-opacity));
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.top-2\/3 {
-  top: 66.666667%;
-}
-
-.left-auto {
-  left: auto;
-}
-
-.right-auto {
-  right: auto;
 }
 
 .order-2 {
@@ -856,6 +844,24 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:min-h-full {
+    min-height: 100%;
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }

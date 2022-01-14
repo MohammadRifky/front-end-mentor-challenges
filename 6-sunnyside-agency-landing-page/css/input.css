@@ -14,7 +14,10 @@
   }
   footer {
     @apply bg-primary-moderate-cyan py-8 
-    flex-col-center gap-y-4;
+    flex-col-center gap-y-4 text-blue-desaturated;
+  }
+  footer a {
+    @apply hover:text-white;
   }
 }
 
@@ -69,10 +72,7 @@
     @apply flex-col-center;
   }
   .testimonial img {
-    @apply w-16 h-16 rounded-full object-cover;
-  }
-  .testimonial p {
-    @apply my-16;
+    @apply w-16 h-16 my-16 rounded-full object-cover;
   }
   /* Utilites */
   .bg-image-cover {
