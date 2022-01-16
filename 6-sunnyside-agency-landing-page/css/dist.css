@@ -605,6 +605,11 @@ footer a:hover {
   margin-right: 0.75rem;
 }
 
+.navbar a:hover {
+  --tw-text-opacity: 1;
+  color: hsl(212 27% 19% / var(--tw-text-opacity));
+}
+
 /* Sections */
 
 .benefits-section {
@@ -612,24 +617,76 @@ footer a:hover {
   margin-bottom: auto;
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.section-heading {
+.benefits-section h2 {
+  text-align: center;
   font-family: Fraunces, serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(212 27% 19% / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .benefits-section h2 {
+    text-align: left;
+  }
+
+  .benefits-section h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.benefits-section p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: left;
+  --tw-text-opacity: 1;
+  color: hsl(232 10% 55% / var(--tw-text-opacity));
+}
+
+.benefits-section a {
+  font-family: Fraunces, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: hsl(212 27% 19% / var(--tw-text-opacity));
 }
 
 .services-section {
+  position: absolute;
+  top: 60%;
+  left: auto;
+  right: auto;
   margin-top: auto;
   margin-bottom: auto;
   padding-left: 4rem;
   padding-right: 4rem;
-  position: absolute;
-  top: 66.666667%;
-  left: auto;
-  right: auto;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .services-section {
+    top: 50%;
+  }
+}
+
+.services-section h2 {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-family: Fraunces, serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.services-section p {
+  font-weight: 600;
 }
 
 .testimonial {
@@ -637,16 +694,36 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .testimonial img {
-  margin-top: 4rem;
   margin-bottom: 4rem;
   height: 4rem;
   width: 4rem;
   border-radius: 9999px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.testimonial p {
+  margin-bottom: 3rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: hsl(232 10% 55% / var(--tw-text-opacity));
+}
+
+.testimonial h5 {
+  margin-bottom: 1rem;
+  font-family: Fraunces, serif;
+  --tw-text-opacity: 1;
+  color: hsl(212 27% 19% / var(--tw-text-opacity));
+}
+
+.testimonial h6 {
+  --tw-text-opacity: 1;
+  color: hsl(210 4% 67% / var(--tw-text-opacity));
 }
 
 /* Utilites */
@@ -710,6 +787,10 @@ footer a:hover {
   font-weight: 500;
   --tw-text-opacity: 1;
   color: hsl(212 27% 19% / var(--tw-text-opacity));
+}
+
+.button:hover {
+  --tw-bg-opacity: 0.5;
 }
 
 .relative {
@@ -811,10 +892,6 @@ footer a:hover {
   padding-right: 4rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
 .text-center {
   text-align: center;
 }
@@ -823,9 +900,26 @@ footer a:hover {
   font-family: Fraunces, serif;
 }
 
-.text-5xl {
-  font-size: 3rem;
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-white {
@@ -843,25 +937,12 @@ footer a:hover {
   color: hsl(198 62% 26% / var(--tw-text-opacity));
 }
 
+.text-blue-grayish {
+  --tw-text-opacity: 1;
+  color: hsl(210 4% 67% / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
-  .md\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .md\:my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  .md\:h-full {
-    height: 100%;
-  }
-
-  .md\:min-h-full {
-    min-height: 100%;
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }

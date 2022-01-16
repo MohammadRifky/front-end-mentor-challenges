@@ -53,26 +53,48 @@
      md:text-white md:px-5 md:rounded-bl-xl md:py-0;
   }
   .navbar a {
-    @apply mx-3;
+    @apply mx-3 hover:text-blue-desaturated;
   }
   .nav-active {
     @apply border-b-4 border-black;
   }
   /* Sections */
   .benefits-section {
-    @apply my-auto px-16;
+    @apply my-auto px-16 py-16;
   }
-  .section-heading {
-    @apply font-serif text-2xl;
+  .benefits-section h2 {
+    @apply font-serif text-4xl md:text-5xl md:text-left text-center font-bold text-blue-desaturated;
   }
+  .benefits-section p {
+    @apply py-8 text-left text-blue-d-grayish;
+  }
+  .benefits-section a {
+    @apply font-serif font-bold uppercase text-blue-desaturated;
+  }
+
   .services-section {
-    @apply benefits-section absolute top-2/3 left-auto right-auto text-center;
+    @apply my-auto px-16 absolute top-[60%] md:top-1/2 left-auto right-auto text-center;
+  }
+  .services-section h2 {
+    @apply font-bold text-3xl font-serif mb-8 mt-12;
+  }
+  .services-section p {
+    @apply font-semibold;
   }
   .testimonial {
-    @apply flex-col-center;
+    @apply flex-col-center my-4;
   }
   .testimonial img {
-    @apply w-16 h-16 my-16 rounded-full object-cover;
+    @apply w-16 h-16 mb-16 rounded-full object-cover;
+  }
+  .testimonial p {
+    @apply text-blue-d-grayish mb-12 font-semibold;
+  }
+  .testimonial h5 {
+    @apply text-blue-desaturated mb-4 font-serif;
+  }
+  .testimonial h6 {
+    @apply text-blue-grayish;
   }
   /* Utilites */
   .bg-image-cover {
@@ -90,6 +112,7 @@
   }
   /* Button Style */
   .button {
-    @apply inline-block py-3 px-8 text-lg font-medium rounded-full bg-white text-blue-desaturated;
+    @apply inline-block py-3 px-8 text-lg font-medium rounded-full 
+    bg-white hover:bg-opacity-50 text-blue-desaturated;
   }
 }
