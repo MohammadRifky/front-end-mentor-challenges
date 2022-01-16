@@ -13,8 +13,8 @@
     @apply text-center;
   }
   footer {
-    @apply bg-primary-moderate-cyan py-8 
-    flex-col-center gap-y-4 text-blue-desaturated;
+    @apply bg-primary-moderate-cyan py-8 font-semibold
+    flex-col-center gap-y-4 text-primary-desaturated-cyan;
   }
   footer a {
     @apply hover:text-white;
@@ -85,13 +85,13 @@
     @apply flex-col-center my-4;
   }
   .testimonial img {
-    @apply w-16 h-16 mb-16 rounded-full object-cover;
+    @apply w-16 h-16 mb-8 md:mb-16 rounded-full object-cover;
   }
   .testimonial p {
-    @apply text-blue-d-grayish mb-12 font-semibold;
+    @apply text-blue-d-grayish mb-6 md:mb-12 font-semibold;
   }
   .testimonial h5 {
-    @apply text-blue-desaturated mb-4 font-serif;
+    @apply text-blue-desaturated mb-2 md:mb-4 font-serif;
   }
   .testimonial h6 {
     @apply text-blue-grayish;
@@ -102,7 +102,7 @@
   }
   .marker {
     @apply relative px-2 after:content-[""] after:absolute after:left-0 after:bottom-0 
-    after:bg-opacity-50 hover:after:bg-opacity-100 after:rounded-full after:w-full after:h-2 after:-z-10 !important;
+    after:bg-opacity-30 hover:after:bg-opacity-100 after:rounded-full after:w-full after:h-2 after:-z-10 !important;
   }
   .marker-yellow {
     @apply after:bg-primary-yellow;
@@ -110,9 +110,14 @@
   .marker-red {
     @apply after:bg-primary-red;
   }
+  .img-filter {
+    filter: invert(24%) sepia(53%) saturate(408%) hue-rotate(116deg)
+      brightness(101%) contrast(91%);
+    @apply hover:filter-none cursor-pointer;
+  }
   /* Button Style */
   .button {
-    @apply inline-block py-3 px-8 text-lg font-medium rounded-full 
-    bg-white hover:bg-opacity-50 text-blue-desaturated;
+    @apply inline-block py-3 px-8 text-lg font-semibold rounded-full 
+    bg-white hover:bg-opacity-50 text-blue-desaturated hover:text-white !important;
   }
 }

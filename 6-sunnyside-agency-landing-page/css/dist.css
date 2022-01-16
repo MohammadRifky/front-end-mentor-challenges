@@ -446,8 +446,9 @@ footer {
   background-color: hsl(168 34% 41% / var(--tw-bg-opacity));
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-weight: 600;
   --tw-text-opacity: 1;
-  color: hsl(212 27% 19% / var(--tw-text-opacity));
+  color: hsl(167 40% 24% / var(--tw-text-opacity));
 }
 
 footer a:hover {
@@ -699,7 +700,7 @@ footer a:hover {
 }
 
 .testimonial img {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   height: 4rem;
   width: 4rem;
   border-radius: 9999px;
@@ -707,18 +708,36 @@ footer a:hover {
      object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .testimonial img {
+    margin-bottom: 4rem;
+  }
+}
+
 .testimonial p {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: hsl(232 10% 55% / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .testimonial p {
+    margin-bottom: 3rem;
+  }
+}
+
 .testimonial h5 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-family: Fraunces, serif;
   --tw-text-opacity: 1;
   color: hsl(212 27% 19% / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .testimonial h5 {
+    margin-bottom: 1rem;
+  }
 }
 
 .testimonial h6 {
@@ -749,7 +768,7 @@ footer a:hover {
   height: 0.5rem !important;
   width: 100% !important;
   border-radius: 9999px !important;
-  --tw-bg-opacity: 0.5 !important;
+  --tw-bg-opacity: 0.3 !important;
   --tw-content: "" !important;
   content: var(--tw-content) !important;
 }
@@ -774,23 +793,25 @@ footer a:hover {
 /* Button Style */
 
 .button {
-  display: inline-block;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  color: hsl(212 27% 19% / var(--tw-text-opacity));
+  display: inline-block !important;
+  border-radius: 9999px !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity)) !important;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 600 !important;
+  --tw-text-opacity: 1 !important;
+  color: hsl(212 27% 19% / var(--tw-text-opacity)) !important;
 }
 
 .button:hover {
-  --tw-bg-opacity: 0.5;
+  --tw-bg-opacity: 0.5 !important;
+  --tw-text-opacity: 1 !important;
+  color: hsl(0 0% 100% / var(--tw-text-opacity)) !important;
 }
 
 .relative {
@@ -873,6 +894,10 @@ footer a:hover {
        column-gap: 2rem;
 }
 
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
 .bg-hero-image-mobile {
   background-image: url('../images/mobile/image-header.jpg');
 }
@@ -922,6 +947,10 @@ footer a:hover {
   text-transform: uppercase;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
@@ -940,6 +969,16 @@ footer a:hover {
 .text-blue-grayish {
   --tw-text-opacity: 1;
   color: hsl(210 4% 67% / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
