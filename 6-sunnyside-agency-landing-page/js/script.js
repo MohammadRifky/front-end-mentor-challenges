@@ -1,0 +1,1 @@
+const navbar=document.getElementById("navbar"),toggleNavbar=()=>{navbar.classList.toggle("hidden")};window.onclick=a=>{a.target.matches("#toggleBtn")||navbar.classList.contains("hidden")||navbar.classList.toggle("hidden")};
