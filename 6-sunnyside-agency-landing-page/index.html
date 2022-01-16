@@ -14,22 +14,25 @@
 <body>
   <div class="min-h-screen bg-hero-image-mobile md:bg-hero-image bg-image-cover 
   flex flex-col text-white">
-    <header class="flex items-center justify-between px-4 py-8">
-      <a href="">
+    <header class="flex items-center justify-between px-8 md:px-4 py-8 relative">
+      <a href="#">
         <img src="./images/logo.svg" alt="Sunnyside logo" loading="lazy">
       </a>
-      <nav class="navbar">
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Projects</a>
-        <a href="" class="button">Contact</a>
+      <nav class="navbar hidden" id="navbar">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#" class="button">Contact</a>
+        <div class="nav-arrow"></div>
       </nav>
       <button class="hide-desktop">
-        <img src="./images/icon-hamburger.svg" alt="Hamburger icon" loading="lazy">
+        <img src="./images/icon-hamburger.svg" onclick="toggleNavbar()"
+          alt="Hamburger icon" loading="lazy" id="toggleBtn">
       </button>
     </header>
-    <section class="flex flex-col justify-center items-center my-auto gap-y-8">
-      <h1 class="text-6xl text-center uppercase font-serif font-black">We are creatives</h1>
+    <section class="flex flex-col px-8 justify-center items-center my-auto gap-y-8">
+      <h1 class="text-6xl text-center uppercase font-serif font-black
+      tracking-normal md:tracking-widest">We are creatives</h1>
       <img src="./images/icon-arrow-down.svg" alt="Down arrow icon" loading="lazy">
     </section>
   </div>
@@ -183,5 +186,6 @@
       <span>Coded by <a href="#" class="underline">Rifky Niyas</a></span>
     </p>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

@@ -46,17 +46,23 @@
     @apply navbar-mobile md:navbar-desktop;
   }
   .navbar-mobile {
-    @apply absolute top-full left-0 w-full flex flex-col items-center py-8;
+    width: calc(100% - 4rem);
+    @apply absolute top-full left-auto rounded right-auto flex flex-col items-center py-8 
+    bg-white text-blue-desaturated gap-y-4;
   }
   .navbar-desktop {
-    @apply md:static md:flex-row md:items-center md:ml-auto md:mr-0 md:w-fit md:border-t-0
-     md:text-white md:px-5 md:rounded-bl-xl md:py-0;
+    @apply md:static md:flex md:bg-transparent md:flex-row md:items-center md:ml-auto md:mr-0 
+    md:w-fit md:border-t-0 md:text-white md:px-5 md:rounded-bl-xl md:py-0 !important;
   }
   .navbar a {
     @apply mx-3 hover:text-blue-desaturated;
   }
-  .nav-active {
-    @apply border-b-4 border-black;
+  .nav-arrow {
+    @apply hide-desktop absolute right-0 -top-5 border-t-0 border-r-0 border-b-[20px] border-l-[20px] 
+    border-solid border-t-transparent border-r-transparent border-b-white border-l-transparent;
+    /* border-style: solid;
+    border-width: 0 0 200px 200px;
+    border-color: transparent transparent #007bff transparent; */
   }
   /* Sections */
   .benefits-section {
@@ -117,7 +123,7 @@
   }
   /* Button Style */
   .button {
-    @apply inline-block py-3 px-8 text-lg font-semibold rounded-full 
-    bg-white hover:bg-opacity-50 text-blue-desaturated hover:text-white !important;
+    @apply inline-block py-3 px-8 text-lg font-bold font-serif rounded-full hover:bg-opacity-50
+    bg-primary-yellow md:bg-white text-blue-desaturated hover:text-white !important;
   }
 }
