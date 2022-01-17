@@ -1,0 +1,16 @@
+{
+  "name": "7-manage-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  },
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./css/input.css -o ./css/dist.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
