@@ -4,7 +4,16 @@
 
 @layer base {
   body {
-    @apply text-base font-main;
+    @apply text-base font-main overflow-x-hidden;
+  }
+  h1 {
+    @apply text-5xl mb-4;
+  }
+  h2 {
+    @apply text-2xl mb-3;
+  }
+  p {
+    @apply my-2;
   }
 }
 @layer utilities {
@@ -13,6 +22,13 @@
   }
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
+  }
+  /* Grid System */
+  .hide-mobile {
+    @apply hidden md:block !important;
+  }
+  .hide-desktop {
+    @apply block md:hidden !important;
   }
 }
 
@@ -24,13 +40,21 @@
   .navbar-mobile {
     width: calc(100% - 4rem);
     @apply absolute top-full left-auto rounded right-auto flex flex-col items-center py-8 
-    bg-white text-blue-desaturated gap-y-4;
+    bg-white gap-y-4;
   }
   .navbar-desktop {
-    @apply md:static md:flex md:bg-transparent md:flex-row md:items-center md:ml-auto md:mr-0 
+    @apply md:static md:flex md:bg-transparent md:flex-row md:items-center md:mr-0 
     md:w-fit md:border-t-0 md:text-white md:px-5 md:rounded-bl-xl md:py-0 !important;
   }
   .navbar a {
-    @apply mx-3 hover:text-blue-desaturated;
+    @apply mx-3 text-primary-blue hover:text-blue-grayish;
+  }
+  /* Buttons */
+  .btn {
+    @apply inline-block py-2 px-4 text-lg font-bold 
+    rounded-full hover:bg-opacity-50 shadow-md !important;
+  }
+  .btn-primary {
+    @apply bg-primary-red shadow-primary-red text-white !important;
   }
 }
