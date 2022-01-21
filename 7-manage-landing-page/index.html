@@ -58,7 +58,7 @@
     </div>
   </div>
   <main>
-    <div class="container grid-center col-md-2 gap-8">
+    <div class="grid-center col-md-2 gap-8">
       <section class="text-center">
         <h2>
           What’s different about Manage?
@@ -70,19 +70,19 @@
         </p>
       </section>
       <div>
-        <article>
+        <article class="specialities-container">
           <h3><span>01</span>Track company-wide progress</h3>
           <p>See how your day-to-day tasks fit into the wider vision. Go from
             tracking progress at the milestone level all the way done to the
             smallest of details. Never lose sight of the bigger picture again.</p>
         </article>
-        <article>
+        <article class="specialities-container">
           <h3><span>02</span>Advanced built-in reports</h3>
           <p>Set internal delivery estimates and track progress toward company
             goals. Our customisable dashboard helps you build out the reports
             you need to keep key stakeholders informed.</p>
         </article>
-        <article>
+        <article class="specialities-container">
           <h3><span>03</span>Everything you need in one place</h3>
           <p>Stop jumping from one service to another to communicate, store files,
             track tasks and share documents. Manage offers an all-in-one team
@@ -134,67 +134,77 @@
           from anywhere. It keeps the whole team in-sync without being intrusive.”
         </p>
       </article>
-      <a href="#">Get Started</a>
+      <a href="#" class="btn btn-primary">Get Started</a>
 
     </section>
-    <section>
-      <h2>Simplify how your team works today.</h2>
-      <a href="#">Get Started</a>
+    <section class="container grid-center md:justify-items-stretch  col-md-2 
+    min-h-[50vh] md:min-h-max bg-primary-red">
+      <h2 class="text-white text-center md:text-left text-4xl">
+        Simplify how your team works today.
+      </h2>
+      <div class="flex-center">
+        <a href="#" class="btn btn-secondary">Get Started</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <form action="#">
-      <input type="text" name="email" placeholder="Updates in your inbox…">
-      <button type="submit">Go</button>
+    <form action="#" class="flex-center gap-x-4">
+      <input type="text" name="email" placeholder="Updates in your inbox…"
+        class="rounded-full py-2 px-4 outline-none">
+      <button type="submit" class="btn btn-primary">
+        Go
+      </button>
     </form>
-    <nav>
-      <a href="#">
+    <nav class="grid grid-rows-4 grid-cols-2">
+      <a href="#" class="hover:text-primary-red">
         Home
       </a>
-      <a href="#">
+      <a href="#" class="hover:text-primary-red">
         Pricing
       </a>
-      <a href="#">
+      <a href="#" class="hover:text-primary-red">
         Products
       </a>
-      <a href="#">
+      <a href="#" class="hover:text-primary-red">
         About Us
       </a>
-      <a href="#">
+      <a href="#" class="hover:text-primary-red">
         Careers
       </a>
-      <a href="#">
+      <a href="#" class="hover:text-primary-red">
         Community
       </a>
-      <a href="#">
+      <a href="#" class="hover:text-primary-red">
         Privacy Policy
       </a>
     </nav>
-    <nav>
+    <nav class="flex justify-between">
       <a href="#">
-        <img src="" alt="Facebook link" loading="lazy">
+        <img src="./images/icon-facebook.svg" alt="Facebook link" loading="lazy">
       </a>
       <a href="#">
-        <img src="" alt="Youtube link" loading="lazy">
+        <img src="./images/icon-youtube.svg" alt="Youtube link" loading="lazy">
       </a>
       <a href="#">
-        <img src="" alt="Twitter link" loading="lazy">
+        <img src="./images/icon-twitter.svg" alt="Twitter link" loading="lazy">
       </a>
       <a href="#">
-        <img src="" alt="Pinterest link" loading="lazy">
+        <img src="./images/icon-pinterest.svg" alt="Pinterest link" loading="lazy">
       </a>
       <a href="#">
-        <img src="" alt="Instagram link" loading="lazy">
+        <img src="./images/icon-instagram.svg" alt="Instagram link" loading="lazy">
       </a>
     </nav>
-    <figure>
-      <img src="" alt="Manage Logo" loading="lazy">
+    <figure class="flex-center my-4">
+      <img src="./images/logo.svg" alt="Manage Logo" loading="lazy">
     </figure>
-    <p>Copyright 2020. All Rights Reserved</p>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+    <p class="text-center">Copyright 2020. All Rights Reserved</p>
+    <div class="my-5 text-center text-blue-grayish">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" 
+      class="text-white underline hover:no-underline" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#" 
+      class="text-white underline hover:no-underline">Rifky Niyas</a>.
     </div>
   </footer>
   <script type="module" src="/main.js"></script>
