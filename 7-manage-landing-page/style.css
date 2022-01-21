@@ -6,24 +6,40 @@
   body {
     @apply text-base font-main overflow-x-hidden;
   }
+  h1,
+  h2,
+  h3 {
+    @apply text-primary-blue font-bold;
+  }
   h1 {
     @apply text-5xl mb-4;
   }
   h2 {
-    @apply text-2xl mb-3;
+    @apply text-3xl mb-3;
+  }
+  h3 {
+    @apply text-xl mb-2;
   }
   p {
-    @apply my-2;
+    @apply my-2 text-blue-grayish;
   }
 }
 @layer utilities {
+  .grid-center {
+    @apply grid justify-items-center;
+  }
   .flex-center {
     @apply flex justify-center items-center;
   }
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
-  /* Grid System */
+  .col-md-2 {
+    @apply grid-cols-1 md:grid-cols-2;
+  }
+  .col-md-3 {
+    @apply grid-cols-1 md:grid-cols-3;
+  }
   .hide-mobile {
     @apply hidden md:block !important;
   }
@@ -33,6 +49,9 @@
 }
 
 @layer components {
+  .container {
+    @apply p-8;
+  }
   /* Navbar */
   .navbar {
     @apply navbar-mobile md:navbar-desktop;
