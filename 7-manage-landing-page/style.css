@@ -89,6 +89,15 @@
   .testimonial h4 {
     @apply pt-16 py-4;
   }
+  .indicator-container {
+    @apply py-4 flex-center;
+  }
+  .indicator-container li {
+    @apply w-5 h-5 mx-3 rounded-full border border-primary-red;
+  }
+  .indicator-container li.tns-nav-active {
+    @apply bg-primary-red;
+  }
   .social-icons {
     @apply w-8 h-8;
   }
