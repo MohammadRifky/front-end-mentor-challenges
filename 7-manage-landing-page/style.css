@@ -24,7 +24,11 @@
     @apply my-2 text-blue-grayish;
   }
   footer {
-    @apply container bg-blue-dark text-gray;
+    @apply container bg-blue-dark text-gray grid gap-x-8
+    grid-cols-1 md:grid-cols-3 md:grid-rows-2;
+  }
+  footer a {
+    @apply hover:text-primary-red;
   }
 }
 @layer utilities {

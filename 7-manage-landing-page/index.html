@@ -160,37 +160,39 @@
   </main>
 
   <footer>
-    <form action="#" class="flex-center gap-x-4">
+    <form action="#" class="flex-center md:items-start gap-x-4 md:order-3">
       <input type="text" name="email" placeholder="Updates in your inbox…"
         class="rounded-full py-2 px-4 outline-none text-blue-grayish">
       <button type="submit" class="btn btn-primary">
         Go
       </button>
     </form>
-    <nav class="grid grid-rows-4 grid-cols-2 gap-y-4 py-5">
-      <a href="#" class="hover:text-primary-red">
+    <nav class="grid grid-rows-4 grid-cols-2 gap-y-4 py-5
+      md:order-2 md:row-span-2">
+      <a href="#">
         Home
       </a>
-      <a href="#" class="hover:text-primary-red">
+      <a href="#">
         Pricing
       </a>
-      <a href="#" class="hover:text-primary-red">
+      <a href="#">
         Products
       </a>
-      <a href="#" class="hover:text-primary-red">
+      <a href="#">
         About Us
       </a>
-      <a href="#" class="hover:text-primary-red">
+      <a href="#">
         Careers
       </a>
-      <a href="#" class="hover:text-primary-red">
+      <a href="#">
         Community
       </a>
-      <a href="#" class="hover:text-primary-red">
+      <a href="#">
         Privacy Policy
       </a>
     </nav>
-    <nav class="flex justify-between">
+    <nav class="flex justify-between md:justify-start 
+    md:order-4 md:gap-x-4">
       <a href="#">
         <img src="./images/icon-facebook.svg" alt="Facebook link" loading="lazy"
           class="social-icons">
@@ -212,15 +214,16 @@
           class="social-icons">
       </a>
     </nav>
-    <figure class="flex-center my-4">
+    <figure class="flex-center my-4 md:order-1 md:justify-start md:items-start">
       <img src="./images/logo.svg" alt="Manage Logo" loading="lazy">
     </figure>
-    <p class="text-center">Copyright 2020. All Rights Reserved</p>
-    <div class="my-5 text-center text-blue-grayish">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" 
-      class="text-white underline hover:no-underline" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#" 
-      class="text-white underline hover:no-underline">Rifky Niyas</a>.
+    
+    <div class="my-5 text-center text-blue-grayish 
+    md:order-5 md:text-right">
+      <p>Copyright 2020. All Rights Reserved</p>
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-white underline hover:no-underline"
+        target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="#" class="text-white underline hover:no-underline">Rifky Niyas</a>.</p>
     </div>
   </footer>
 
