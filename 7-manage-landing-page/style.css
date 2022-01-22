@@ -81,20 +81,17 @@
     @apply bg-primary-red rounded-full flex-center  h-full px-4 mr-5;
   }
   .testimonial {
-    @apply relative bg-gray text-center;
+    @apply relative bg-gray text-center mt-20 px-8 pb-8 md:mx-8;
   }
   .testimonial figure {
-    @apply absolute -top-20 left-2/4 right-2/4 -translate-x-2/4 w-24 h-24;
+    @apply absolute -top-10 left-2/4 right-2/4 -translate-x-2/4  w-24 h-24 rounded-full;
   }
-  .testimonial img {
-    @apply rounded-full;
+  .testimonial h4 {
+    @apply pt-16 py-4;
   }
-  /* .testimonial h4 {
-    @apply;
+  .social-icons {
+    @apply w-8 h-8;
   }
-  .testimonial p {
-    @apply;
-  } */
   /* Buttons */
   .btn {
     @apply inline-block py-2 px-4 text-lg font-bold 
