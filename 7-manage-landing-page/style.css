@@ -25,7 +25,7 @@
   }
   footer {
     @apply container bg-blue-dark text-gray grid gap-x-8
-    grid-cols-1 md:grid-cols-3 md:grid-rows-2;
+    gap-y-8 md:gap-y-0 grid-cols-1 md:grid-cols-3 md:grid-rows-2;
   }
   footer a {
     @apply hover:text-primary-red;
@@ -52,6 +52,9 @@
   }
   .hide-desktop {
     @apply block md:hidden !important;
+  }
+  .bg-image-cover {
+    @apply bg-cover bg-no-repeat bg-center bg-scroll;
   }
 }
 
@@ -94,10 +97,10 @@
     @apply pt-16 py-4;
   }
   .indicator-container {
-    @apply py-4 flex-center;
+    @apply py-4 flex-center md:hidden;
   }
   .indicator-container li {
-    @apply w-5 h-5 mx-3 rounded-full border border-primary-red;
+    @apply w-5 h-5 mx-3 rounded-full cursor-pointer border border-primary-red;
   }
   .indicator-container li.tns-nav-active {
     @apply bg-primary-red;

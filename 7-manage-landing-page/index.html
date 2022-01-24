@@ -20,7 +20,7 @@
       <a href="#">
         <img src="./images/logo.svg" alt="Manage logo" loading="lazy">
       </a>
-      <nav class="navbar hidden">
+      <nav class="navbar hidden" id="navbar">
         <a href="#">
           Pricing
         </a>
@@ -38,8 +38,9 @@
         </a>
       </nav>
       <button class="hide-mobile btn btn-primary">Get Started</button>
-      <button class="hide-desktop">
-        <img src="./images/icon-hamburger.svg" alt="">
+      <button class="hide-desktop" onclick="toggleNavbar()">
+        <img src="./images/icon-hamburger.svg" alt="Navbar toggle icon"
+          id="toggleBtn">
       </button>
     </header>
     <div class="grid-center col-md-2 my-auto px-8">
@@ -149,7 +150,9 @@
     </section>
 
     <section class="container grid-center md:justify-items-stretch  col-md-2 
-    min-h-[50vh] md:min-h-max bg-primary-red">
+    min-h-[50vh] md:min-h-max bg-primary-red 
+    bg-simplify-mobile md:bg-simplify-desktop bg-image-cover ">
+      
       <h2 class="text-white text-center md:text-left text-4xl">
         Simplify how your team works today.
       </h2>
@@ -167,28 +170,28 @@
         Go
       </button>
     </form>
-    <nav class="grid grid-rows-4 grid-cols-2 gap-y-4 py-5
+    <nav class="grid grid-rows-4 grid-cols-2 gap-y-4 md:gap-y-0 py-5
       md:order-2 md:row-span-2">
       <a href="#">
         Home
       </a>
       <a href="#">
-        Pricing
-      </a>
-      <a href="#">
-        Products
-      </a>
-      <a href="#">
-        About Us
-      </a>
-      <a href="#">
         Careers
+      </a>
+      <a href="#">
+        Pricing
       </a>
       <a href="#">
         Community
       </a>
       <a href="#">
+        Products
+      </a>
+      <a href="#">
         Privacy Policy
+      </a>
+      <a href="#">
+        About Us
       </a>
     </nav>
     <nav class="flex justify-between md:justify-start 
@@ -227,7 +230,7 @@
     </div>
   </footer>
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-  <script type="module" src="/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script>
+  <script src="./main.js" defer></script>
 </body>
 </html>

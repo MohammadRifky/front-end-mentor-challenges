@@ -1,4 +1,5 @@
-var slider = tns({
+// carousel
+const slider = tns({
     container: '.my-slider',
     slideBy: 'page',
     autoplay: true,
@@ -17,4 +18,19 @@ var slider = tns({
       }
     }
 });
-// console.log(document.querySelector('#indicators'))
+//Navbar
+const navbar = document.getElementById('navbar')
+const toggleBtn = document.getElementById('toggleBtn')
+const toggleNavbar = () => {
+  const isNavHidden  = navbar.classList.contains('hidden')
+  navbar.classList.toggle('hidden')
+  if (isNavHidden) return toggleBtn.src = "./images/icon-close.svg"
+  //Else
+  return toggleBtn.src = "./images/icon-hamburger.svg"
+}
+//.addEventListener('click', toggleNavbar)
+window.onclick = (event) => {
+    if (!event.target.matches('#toggleBtn') && !navbar.classList.contains('hidden')) {
+        toggleNavbar()
+    }
+}

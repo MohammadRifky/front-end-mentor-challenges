@@ -18,6 +18,10 @@ module.exports = {
       gray : 'hsl(0, 0%, 98%)',
       white : '#ffffff'
     },
+    backgroundImage: {
+      'simplify-mobile': "url(./images/bg-simplify-section-mobile.svg)",
+      'simplify-desktop': "url(./images/bg-simplify-section-desktop.svg)",
+    },
     extend: {},
   },
   plugins: [],
