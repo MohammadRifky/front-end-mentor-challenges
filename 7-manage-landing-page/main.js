@@ -34,3 +34,12 @@ window.onclick = (event) => {
         toggleNavbar()
     }
 }
+//Form Validation
+const validateForm = (e) => {
+  e.preventDefault()
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const isInputValid = emailRegex.test(document.getElementById('email').value) 
+  const feedbackArea = document.getElementById('emailFeedback')
+  if (isInputValid) return feedbackArea.innerText = "Successful"
+  return feedbackArea.innerText = "Please insert a valid email"
+}

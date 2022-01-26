@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-base font-main overflow-x-hidden;
+    @apply text-base font-main;
   }
   h1,
   h2,
