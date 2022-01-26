@@ -18,7 +18,7 @@
     @apply text-3xl mb-4;
   }
   h3 {
-    @apply text-xl mb-3;
+    @apply text-base md:text-xl mb-3;
   }
   p {
     @apply my-2 text-blue-grayish;
@@ -41,6 +41,9 @@
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
+  .container {
+    @apply py-16 md:px-16 px-8;
+  }
   .col-md-2 {
     @apply grid-cols-1 md:grid-cols-2;
   }
@@ -59,9 +62,6 @@
 }
 
 @layer components {
-  .container {
-    @apply p-8;
-  }
   /* Navbar */
   .navbar {
     @apply navbar-mobile md:navbar-desktop;
@@ -82,10 +82,14 @@
     @apply mb-8;
   }
   .specialities-container h3 {
-    @apply bg-primary-red bg-opacity-10 h-8 flex items-center;
+    @apply bg-primary-red md:bg-transparent w-screen md:w-full bg-opacity-10 flex items-center
+      rounded-tl-full rounded-bl-full;
   }
   .specialities-container h3 span {
-    @apply bg-primary-red rounded-full flex-center  h-full px-4 mr-5;
+    @apply bg-primary-red text-white rounded-full flex-center  h-full px-4 mr-5;
+  }
+  .specialities-container p {
+    @apply px-4 md:px-0;
   }
   .testimonial {
     @apply relative bg-gray text-center mt-20 px-8 pb-8 md:mx-8;
@@ -110,13 +114,13 @@
   }
   /* Buttons */
   .btn {
-    @apply inline-block py-2 px-4 text-lg font-bold 
-    rounded-full hover:bg-opacity-50 shadow-md !important;
+    @apply inline-block py-2 px-5 text-lg font-bold 
+    rounded-full shadow-md !important;
   }
   .btn-primary {
-    @apply bg-primary-red shadow-primary-red text-white !important;
+    @apply bg-primary-red shadow-primary-red/50 text-white hover:bg-opacity-50 !important;
   }
   .btn-secondary {
-    @apply bg-white text-primary-red !important;
+    @apply bg-white text-primary-red hover:text-primary-red/50 !important;
   }
 }
